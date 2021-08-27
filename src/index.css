@@ -1,13 +1,249 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App{
+    background-image:  linear-gradient(158.86deg, #1C2A34 10.36%, #111A20 49.58%, #111A20 49.58%);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    min-height: 100vh;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    max-width: 80%;
+    width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    padding: 10%;
+    background-color: black;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Jost , sans-serif;
+  }
+
+img{
+    width: 20px;
+    height: 20px;
+    margin-top: 1%;
+}
+
+#article, #snippets, #about{
+    padding-right: 5%;
+}
+
+.name{
+    color: #ECF8FF;
+    margin-left: 4%;
+}
+
+a{
+    text-decoration: none;
+    color: #ECF8FF;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom:15%;
+}
+
+.header_left{
+    display: flex;
+    width: 40%;
+}
+
+.header_right{
+    width: 90%;
+    margin-left: 30%;
+}
+
+button{
+    font-weight: bold;
+    padding: 2%;
+    width: 25%;
+    border: 2px solid rgba(124, 201, 255, 0.41);
+    border-radius: 6px;
+    color: #ECF8FF;
+    cursor: pointer;
+    background-image: linear-gradient(158.86deg, #1C2A34 10.36%, #111A20 49.58%, #111A20 49.58%);
+}
+
+h1{
+    text-shadow: 0px 0px 76px rgba(188, 251, 195, 0.3);
+    color: #82F9A1;
+    margin-left: -38%;
+    margin-bottom: 10%;
+
+}
+.desc{
+    margin-left: -13%;
+}
+
+p{
+    color: #ECF8FF;
+}
+
+.intro{
+    margin-left: -38%;
+    font-weight: 700;
+    margin-bottom: 20%;
+    
+}
+.intro_first{
+    margin-left: 5%;
+}
+.intro_second{
+    margin-left: -27%;
+}
+#twitter{
+    color: #1DA1F2;
+}
+#github{
+    color: #BBC6CC;
+}
+#dribble{
+    color: #EA4C89;
+}
+
+h3{
+    color: #ECF8FF;
+}
+
+.latest{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+.latest_right{
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+}
+#arrow{
+    padding-left: 8%;
+    filter: invert(67%) sepia(67%) saturate(530%) hue-rotate(178deg) brightness(102%) contrast(101%);
+}
+
+.article{
+    display: flex;
+    width: 100%;
+    margin-bottom: 7%;
+}
+.article_details{
+    margin-left: 4%;
+    font-weight: 800;
+}
+
+.date{
+    margin-left: -55%;
+    color: #5E8CA7;
+    font-weight: 500;
+}
+
+.yawnch, .stock, .turtles{
+    background-color: #1C2C35;
+    margin-bottom: 5%;
+    border-radius: 6px;
+    border-left-style: solid;
+    padding: 5%;
+    border-left-width: thick;
+    margin-top: 3%;
+
+}
+.yawnch{
+    border-left-color: #CCA9F4;
+}
+
+.stock{
+    border-left-color: #81F59B;
+    width: 45%;
+}
+
+.turtles{
+    border-left-color: #D9534D;
+    width: 45%;
+
+}
+
+#projects_head{
+    margin-left: -85%;
+}
+
+
+.project_text{
+    margin-bottom: 10%;
+    margin-left:  5%;
+}
+
+.yawnch_title{
+    margin-left: -64vh;
+   margin-bottom: 3%;
+
+}
+
+.yawnch_button{
+    margin-left: -60%
+}
+
+.projects_split{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stock_title, .turtle_title{
+    margin-left: -15%;
+    margin-bottom: 4%;
+}
+
+.stock_button, .turtle_button{
+    margin-left: -35%;
+}
+.turtle_button{
+    margin-top: 8%;
+}
+
+.base{
+    background-color: #1C2C35;
+    padding: 10%;
+    text-align: center;
+    margin-left: -17%;
+    margin-right: -17%;
+}
+
+#chat{
+    background-color: #82F9A1;
+    color:  #111A20 ;
+    background-image: none;
+    font-weight: bold;
+    margin-top: 5%;
+    width: 15%;
+}
+.base_heading{
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+footer{
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 10%;
+}
+
+.base_logos{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-left: 30%;
+}
+
+#git, #dril{
+    margin-left: 40%;
+}
+
+
+
+
+
