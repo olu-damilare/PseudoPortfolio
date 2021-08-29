@@ -32,8 +32,7 @@ const About = () => {
 
 
     return (
-        <div className ="App">
-            {/* <Header /> */}
+        <div >
             {contents.map((content) => {
                 return (<AboutDesc text = "text" title = {content.title} first = {content.first} second = {content.second} third = {content.third} 
                     fourth = {content.fourth} class = {content.class}/>
@@ -43,7 +42,6 @@ const About = () => {
                 )
             }
             <div className="blank"></div>
-            <Footer twitter = {<SiTwitter color="#ECF8FF"/>} github = {<RiGithubFill color="#ECF8FF"/>} dribble = {<RiDribbbleLine color="#ECF8FF"/>} />
         </div>
     )
 }
