@@ -73,10 +73,14 @@ button{
 }
 
 h1{
-    text-shadow: 0px 0px 76px rgba(188, 251, 195, 0.3);
+    
+    text-shadow: 0px 0px 76px rgb(188 251 195 / 30%);
     color: #82F9A1;
-    margin-left: -38%;
+    margin-right: 40%;
     margin-bottom: 10%;
+    width: 100%;
+    text-align: left;
+
 
 }
 .desc{
@@ -87,18 +91,16 @@ p{
     color: #ECF8FF;
 }
 
-.intro{
-    margin-left: -38%;
+.intro {
+    margin-right: 30%;
     font-weight: 700;
     margin-bottom: 20%;
-    
+    width: 100%;
+    text-align: left;
 }
-.intro_first{
-    margin-left: 5%;
-}
-.intro_second{
-    margin-left: -27%;
-}
+
+
+
 #twitter{
     color: #1DA1F2;
 }
@@ -139,14 +141,15 @@ h3{
 }
 
 .date, #article_date{
-    margin-left: -55%;
     color: #5E8CA7;
     font-weight: 500;
+    text-align: left;
 }
 
 #article_date{
     color: #7AB6D9;
     font-size: 14px;
+    
 }
 
 
@@ -252,19 +255,38 @@ footer{
 
 .article_intro{
     margin-top: 10%;
+    margin-right: 15%;
 }
 
 .article_snippet{
-    margin-left: 13vh;
     margin-top: 5px;
     font-size: 13px;
+    text-align: left;
 }
 
 #article_readmore{
-    margin-left: -60%;
+    margin-right: 65%;
     font-size: 12px;
     font-weight: 700;
+    text-align: left;
+    margin-top: 15px;
+}
+
+#article_readmore a{
     color: #7AB6D9;
+    
+}
+
+.article_title{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.article_head{
+    color: #ECF8FF;
+    margin-right: 65%;
+    text-align: left;
 }
 
 .blank{
@@ -279,13 +301,70 @@ footer{
     color: #ECF8FF;
 }
 .main, .sub-main{
-    margin-left: -60%;
     margin-top: 10%;
+    margin-right: 10%; 
+    text-align: left;  
 }
+
+.sub-main{
+    font-size: 20px;
+}
+
+
 .text{
     margin-top: 30px;
+    text-align: left;
+}
+@media (max-width:1024px){
+    body {
+        padding: 5%;
+    }
+    .App{
+        max-width:90%;
+    }
+}
+
+/* 768px - 991px - BOOTSTRAP TABLET */
+@media (max-width:991px){
+    h1, .intro {
+        margin-left: 0;
+    }
+    .header_left {
+        width: 50%;
+    }
+    .header_right {
+        width: 100%;
+        margin-left: 10%;
+    }
+    .yawnch_title {
+        margin-left: 0;
+        text-align: left;
+    }
+    .project_text {
+        margin-left: 0;
+    }
 }
 
 
-
-
+/* 0 - 767px - BOOTSTRAP MOBILE */
+@media (max-width:767px){
+    header{
+        flex-wrap: wrap;
+    }
+    .header_left {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .projects_split, footer {
+        flex-wrap: wrap;
+    }
+    .stock, .turtles, .foot_text {
+        width: 100%;
+    }
+    .foot_text{
+        margin-bottom: 30px;
+    }
+    #chat {
+        width: 33%;
+    }
+}
