@@ -1,9 +1,4 @@
 import React from 'react'
-import Header from './reuseables/headers'
-import Footer from './reuseables/footer'
-import {SiTwitter} from "react-icons/si";
-import {RiGithubFill} from "react-icons/ri";
-import {RiDribbbleLine} from "react-icons/ri";
 import AboutDesc from './about_components/about_para';
 
 const About = () => {

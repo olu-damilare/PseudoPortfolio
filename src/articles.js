@@ -1,9 +1,4 @@
 import React from 'react'
-import Footer from './reuseables/footer';
-import Header from './reuseables/headers'
-import {SiTwitter} from "react-icons/si";
-import {RiGithubFill} from "react-icons/ri";
-import {RiDribbbleLine} from "react-icons/ri";
 import ArticleIntro from './articles_components/articles_intro';
 
 const Articles = () => {
@@ -64,8 +59,6 @@ const Articles = () => {
 
             </div>
             
-            {/* {renderArticles()}
-            {renderArticles()}          */}
 
         </div>
     )

@@ -1,10 +1,7 @@
 import React from 'react'
 import Button from './button'
 import heart from '../img/heart.png';
-import {BrowserRouter as Router,
-    Switch,
-    Route, Link } from 'react-router-dom'
-import Articles from '../articles';
+import {Link } from 'react-router-dom'
 
  
 const Header = () => {
