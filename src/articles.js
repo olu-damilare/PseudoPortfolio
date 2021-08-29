@@ -27,9 +27,7 @@ const Articles = () => {
     ]
 
     const renderArticles = () =>{
-        console.log('this function was called')
         {articles.map((article)=>{
-            console.log('function ran')
             return(
                 <ArticleIntro date={article.date} title={article.title} snippet={article.snippet}/>
                 )
@@ -42,9 +40,8 @@ const Articles = () => {
     }
 
     return (
-        <div className = "App">
-            <Header />
-            <h2>Articles</h2>
+        <div >
+            <h2 className="article_head">Articles</h2>
             {articles.map((article)=>{
             return(
                 <ArticleIntro date={article.date} title={article.title} snippet={article.snippet}/>
@@ -69,7 +66,6 @@ const Articles = () => {
             
             {/* {renderArticles()}
             {renderArticles()}          */}
-            <Footer twitter = {<SiTwitter color="#ECF8FF"/>} github = {<RiGithubFill color="#ECF8FF"/>} dribble = {<RiDribbbleLine color="#ECF8FF"/>} />
 
         </div>
     )
