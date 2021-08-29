@@ -138,11 +138,18 @@ h3{
     font-weight: 800;
 }
 
-.date{
+.date, #article_date{
     margin-left: -55%;
     color: #5E8CA7;
     font-weight: 500;
 }
+
+#article_date{
+    color: #7AB6D9;
+    font-size: 14px;
+}
+
+
 
 .yawnch, .stock, .turtles{
     background-color: #1C2C35;
@@ -243,6 +250,41 @@ footer{
     margin-left: 40%;
 }
 
+.article_intro{
+    margin-top: 10%;
+}
+
+.article_snippet{
+    margin-left: 13vh;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+#article_readmore{
+    margin-left: -60%;
+    font-size: 12px;
+    font-weight: 700;
+    color: #7AB6D9;
+}
+
+.blank{
+    margin-bottom: 50%;
+}
+
+.link{
+    margin-right: 5%;
+}
+
+.about_desc{
+    color: #ECF8FF;
+}
+.main, .sub-main{
+    margin-left: -60%;
+    margin-top: 10%;
+}
+.text{
+    margin-top: 30px;
+}
 
 
 
