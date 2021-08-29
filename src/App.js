@@ -11,6 +11,11 @@ import Chat from './home_components/chat_button';
 import {SiTwitter} from "react-icons/si";
 import {RiGithubFill} from "react-icons/ri";
 import {RiDribbbleLine} from "react-icons/ri";
+import Footer from './reuseables/footer';
+import {BrowserRouter as Router,
+  Switch,
+  Route, Link } from 'react-router-dom'
+import Articles from './articles';
 
 function App() {
   const articles = [
@@ -26,7 +31,8 @@ function App() {
   const third_project = "I lead web development full time at All Turtles, an AI startup studio."
 
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
       <Header  />
       <h1>I'm Damilare, software engineer <br></br>
       <span className="desc"> and interface designer </span></h1>
@@ -63,18 +69,15 @@ function App() {
         <p>Let's have a conversation! I'd love to hear about what you're <br></br> working on and find a way to work together.</p>
         <Chat icon={<RiChat4Line color="#111A20"/>}/>
       </div>
-      <footer>
-        <div className="foot_text">
-          <p>Designed and developed by Damilare Jolayemi.</p>
-          <p>Built with <b>React</b>. Hosted on <b>Netlify</b>. Type set in <b>Jost*</b></p>
-        </div>
-        <div className="base_logos">
-          <a href="#"><SiTwitter color="#ECF8FF"/> </a> 
-          <a id="git" href="#"><RiGithubFill color="#ECF8FF"/></a>
-          <a id="dril" href="#"><RiDribbbleLine color="#ECF8FF"/></a>
-        </div>
-      </footer>
+      <Footer twitter = {<SiTwitter color="#ECF8FF"/>} github = {<RiGithubFill color="#ECF8FF"/>} dribble = {<RiDribbbleLine color="#ECF8FF"/>}/>
+   
+      <Switch> 
+            <Route path="/articles" component = {Articles}/> 
+
+            {/* <Route path="../articles" component={Articles} /> */}
+          </Switch>
     </div>
+    </Router>
   );
 }
 
