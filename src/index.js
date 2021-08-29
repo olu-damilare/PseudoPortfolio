@@ -9,9 +9,7 @@ import About from './about';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <About />
-    {/* <Articles /> */}
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
