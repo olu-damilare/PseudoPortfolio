@@ -8,9 +8,9 @@ const Footer = (props) => {
             <p>Built with <b>React</b>. Hosted on <b>Netlify</b>. Type set in <b>Jost*</b></p>
             </div>
             <div className="base_logos">
-            <a href="#">{props.twitter} </a> 
-            <a id="git" href="#">{props.github}</a>
-            <a id="dril" href="#">{props.dribble}</a>
+            <a href="twitter.com/dami_lareh">{props.twitter} </a> 
+            <a id="git" href="github.com/olu-damilare">{props.github}</a>
+            <a id="dril" href="dribble.com">{props.dribble}</a>
             </div>
       </footer>
     )
