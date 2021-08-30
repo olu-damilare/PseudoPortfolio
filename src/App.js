@@ -4,7 +4,7 @@ import {SiTwitter} from "react-icons/si";
 import {RiGithubFill} from "react-icons/ri";
 import {RiDribbbleLine} from "react-icons/ri";
 import Footer from './reuseables/footer';
-import {BrowserRouter as Router,Switch,Route, Link } from 'react-router-dom'
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import Home from './home';
 import About from './about';
 

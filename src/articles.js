@@ -21,39 +21,12 @@ const Articles = () => {
         
     ]
 
-    const renderArticles = () =>{
-        {articles.map((article)=>{
-            return(
-                <ArticleIntro date={article.date} title={article.title} snippet={article.snippet}/>
-                )
-
-            }
-        )
-
-        }
-
-    }
-
+    
     return (
         <div >
             <h2 className="article_head">Articles</h2>
-            {articles.map((article)=>{
-            return(
-                <ArticleIntro date={article.date} title={article.title} snippet={article.snippet}/>
-                )
-
-                 }
-                )
-             }
-
-            {articles.map((article)=>{
-            return(
-                <ArticleIntro date={article.date} title={article.title} snippet={article.snippet}/>
-                )
-
-                 }
-                )
-             }
+            {articles.map((article) => <ArticleIntro date={article.date} title={article.title} snippet={article.snippet}/>)}
+            {articles.map((article) => <ArticleIntro date={article.date} title={article.title} snippet={article.snippet}/>)}
 
             <div className="blank">
 
